@@ -1,0 +1,16 @@
+{
+  "name": "tunefinder-backend",
+  "version": "1.0.0",
+  "description": "This section of the project corresponds with the backend portion of the TuneFinder website, here you will find how to start the application in development mode, execute tests and get a build version. As the backend, this project will manage everything related with the servers response to the frontend and the connections to the database and APIs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://JJSierra@dev.azure.com/JJSierra/TuneFinder/_git/tunefinder-backend"
+  },
+  "author": "JJSierra",
+  "license": "ISC"
+}
