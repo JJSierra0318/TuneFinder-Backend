@@ -1,4 +1,5 @@
-const http = require('http')
+const express = require('express')
+const app = express()
 
 //basic template for artists
 let artists = [
@@ -42,11 +43,15 @@ let artists = [
   }
 ]
 
-const app = http.createServer((request, response) => {
-  response.writeHead(200, { 'Content-Type': 'application/json' })
-  response.end(JSON.stringify(artists))
+app.get('/', (request, response) => {
+  response.send('<p>Initial Server config</p>')
+})
+
+app.get('/api/artists', (request, response) => {
+  response.json(artists)
 })
 
 const PORT = 3001
-app.listen(PORT)
-console.log(`Server running on port ${PORT}`)
+app.listen(PORT, () => {
+  console.log(`server running on port ${PORT}`)
+})

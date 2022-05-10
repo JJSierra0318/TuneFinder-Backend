@@ -12,5 +12,8 @@
     "url": "https://JJSierra@dev.azure.com/JJSierra/TuneFinder/_git/tunefinder-backend"
   },
   "author": "JJSierra",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
