@@ -5,14 +5,19 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  name: {
+  username: {
     type: String,
     required: true
   },
   uri: {
     type: String,
     required: true
-  }
+  },
+  favorites: [
+    {
+      type: String
+    }
+  ]
 })
 
 userSchema.set('toJSON', {
