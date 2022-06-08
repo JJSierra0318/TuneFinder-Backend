@@ -2,7 +2,7 @@ const favoriteRouter = require('express').Router()
 const User = require('../models/user')
 
 favoriteRouter.get('/', async (request, response) => {
-  const data = request.body
+  const data = request.query
 
   const user = await User.findOne({ username: data.username })
 
